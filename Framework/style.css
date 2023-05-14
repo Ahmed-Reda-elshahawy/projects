@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(./imgs/back.jpg);
+    min-height: 100vh;
+}
+
+/* start container */
+.container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* xsmall */
+@media(min-width:0px) {
+    .container {
+        width: 300px;
+    }
+}
+
+/* small */
+@media(min-width:768px) {
+    .container {
+        width: 735px;
+    }
+}
+
+/* medium */
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End container */
+/* start Table */
+.content {
+    padding-top: 40px;
+    position: relative;
+}
+
+.content table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+    color: black;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 0 2px 5px #eee;
+}
+
+/* @media(max-width:767px) {
+    .content table {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+.content table td,
+.content table th {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 10px;
+}
+
+.content table td:nth-child(4),
+.content table th:nth-child(4) {
+    border-right: 1px solid #ccc;
+}
+
+.content table td {
+    text-align: center;
+}
+
+.content table th input {
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    color: darkgoldenrod;
+    background-color: #eee;
+}
+
+.content table td input {
+    border: none;
+    font-size: large;
+    text-align: center;
+    outline: none;
+    background-color: #eee;
+}
+
+/* End Table */
+/* start calc-btn */
+.content .btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    background-color: rgb(7, 78, 102);
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* End calc-btn */
+/* start Result */
+.result {
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.result .value span {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 6px;
+    color: white;
+}
+
+/* End Result */
+/* start probability */
+.probability {
+    margin: 20px auto;
+}
+
+/* End probability */

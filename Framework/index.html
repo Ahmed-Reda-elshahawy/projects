@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Framework</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="frame">
+                <table>
+                    <thead>
+                        <th>
+                            <input type="text" placeholder="Alternatives">
+                        </th>
+                        <th>
+                            <input type="text" placeholder="recession">
+                        </th>
+                        <th>
+                            <input type="text" placeholder="normal">
+                        </th>
+                        <th>
+                            <input type="text" placeholder="boom">
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr class="row-1">
+                            <th>
+                                <input type="text" placeholder="A">
+                            </th>
+                            <td class="col-1">
+                                <input type="number" placeholder="_">
+                            </td>
+                            <td class="col-2">
+                                <input type="number" placeholder="_">
+                            </td>
+                            <td class="col-3">
+                                <input type="number" placeholder="_">
+                            </td>
+                        </tr>
+                        <tr class="row-2">
+                            <th>
+                                <input type="text" placeholder="B">
+                            </th>
+                            <td class="col-1">
+                                <input type="number" placeholder="_">
+                            </td>
+                            <td class="col-2">
+                                <input type="number" placeholder="_">
+                            </td>
+                            <td class="col-3">
+                                <input type="number" placeholder="_">
+                            </td>
+                        </tr>
+                        <tr class="row-3">
+                            <th>
+                                <input type="text" placeholder="C">
+                            </th>
+                            <td class="col-1">
+                                <input type="number" placeholder="_">
+                            </td>
+                            <td class="col-2">
+                                <input type="number" placeholder="_">
+                            </td>
+                            <td class="col-3">
+                                <input type="number" placeholder="_">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="probability">
+                <table>
+                    <thead class="row">
+                        <th>
+                            <input type="text" placeholder="Probability of outcome">
+                        </th>
+                        <td>
+                            <input type="number" placeholder="_">
+                        </td>
+                        <td>
+                            <input type="number" placeholder="_">
+                        </td>
+                        <td>
+                            <input type="number" placeholder="_">
+                        </td>
+                    </thead>
+                </table>
+            </div>
+            <div class="btns">
+                <button class="Maximax-btn">Calc Maximax</button>
+                <button class="Maximin-btn">Calc Maximin</button>
+                <button class="Minimax-btn">Calc Minimax</button>
+                <button class="Minimax-regret">Calc Minimax Regret</button>
+                <button class="emv">Calc EMV</button>
+                <button class="eol">Calc EOL Regret</button>
+                <button class="Equally-likely">Equally likely</button>
+                <button class="EVPI">EVPI</button>
+            </div>
+            <div class="result">
+                <p class="value"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./project.js"></script>
+</body>
+
+</html>
